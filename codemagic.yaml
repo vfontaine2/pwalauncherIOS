@@ -2,7 +2,7 @@ workflows:
     sample-workflow:
         name: TomQRIos
         integrations:
-          app_store_connect: Auth Key F5BQS6C9PW
+          app_store_connect: F5BQS6C9PW
         max_build_duration: 120
         instance_type: mac_mini_m2
         environment:
