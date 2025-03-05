@@ -1,3 +1,7 @@
+scripts:  
+    - name: Set up code signing settings on Xcode project  
+      script: xcode-project use-profiles   
+                --custom-export-options='{"testFlightInternalTestingOnly": true}' 
 workflows:
     sample-workflow:
         name: TomQRIos
