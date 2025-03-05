@@ -3,3 +3,7 @@ workflows:
         name: TomQRIos
         max_build_duration: 120
         instance_type: mac_mini_m2
+        environment:
+          ios_signing:
+            distribution_type: app_store # or: ad_hoc | development | enterprise
+            bundle_identifier: R5V4VPDYPV.com.oslo.qrtest
