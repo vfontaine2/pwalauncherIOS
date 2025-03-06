@@ -13,13 +13,15 @@ workflows:
           app_store_connect:
             # Use referenced App Store Connect API key to authenticate binary upload
             auth: integration 
-    
+            apple_id: "solutions.mobilite@oslo.fr"
+            bundle_id: "com.oslo.qrtest"
+            
             # Configuration related to TestFlight (optional)
     
             # Optional boolean, defaults to false. Whether or not to submit the uploaded
             # build to TestFlight beta review.
             # Note: This action is performed during post-processing.
-            submit_to_testflight: false
+            submit_to_testflight: true
     
             # Optional boolean, defaults to false. Set to true to automatically expire 
             # previous build in review or waiting for review in Testflight before
