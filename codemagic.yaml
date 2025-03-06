@@ -14,7 +14,6 @@ workflows:
             # Use referenced App Store Connect API key to authenticate binary upload
             auth: integration 
             apple_id: "solutions.mobilite@oslo.fr"
-            bundle_identifier: "com.oslo.qrtest"
             
             # Configuration related to TestFlight (optional)
     
