@@ -25,11 +25,11 @@ workflows:
         - name: Build ipa for distribution
           script: | 
             xcode-project build-ipa --no-show-build-settings \
-              --workspace "$CM_BUILD_DIR/TomasQR.xcodeproj" \
+              --workspace "$CM_BUILD_DIR/TomasQR.xcworkspace" \
               --scheme "TomasQR"
         environment:
           vars:
-              XCODE_WORKSPACE:: “TomasQR.xcodeproj" # <-- Put the name of your workspace here.
+              XCODE_WORKSPACE:: “TomasQR.xcworkspace" # <-- Put the name of your workspace here.
               XCODE_SCHEME: "TomasQR" # <-- Put the name of your scheme here.
           ios_signing:
             distribution_type: app_store  # or: ad_hoc | development | enterprise
