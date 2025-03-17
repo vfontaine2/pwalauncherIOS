@@ -32,7 +32,7 @@ workflows:
               XCODE_WORKSPACE:: “TomasQR.xcworkspace" # <-- Put the name of your workspace here.
               XCODE_SCHEME: "TomasQR" # <-- Put the name of your scheme here.
           ios_signing:
-            distribution_type: app_store  # or: ad_hoc | development | enterprise
+            distribution_type: ad_hoc  # or: ad_hoc | development | enterprise
             bundle_identifier: com.oslo.qrtest
         artifacts:
         - build/ios/ipa/*.ipa
@@ -63,7 +63,7 @@ workflows:
     
             # Optional boolean, defaults to false. Whether or not to submit the uploaded
             # build to App Store review. Note: This action is performed during post-processing.
-            submit_to_app_store: true
+            submit_to_app_store: false
     
             # Optional boolean, defaults to false. Set to true to cancel the previous 
             # submission (if applicable) when submitting a new build to App Store review.
