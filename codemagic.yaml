@@ -6,7 +6,7 @@ workflows:
         max_build_duration: 120
         instance_type: mac_mini_m2
         scripts:
-         - name: Set Info.plist values
+        - name: Set Info.plist values
             script: | 
               PLIST=$CM_BUILD_DIR/$XCODE_SCHEME/Info.plist
               PLIST_BUDDY=/usr/libexec/PlistBuddy
