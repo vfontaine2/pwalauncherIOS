@@ -32,7 +32,7 @@ workflows:
               XCODE_WORKSPACE:: “TomasQR.xcworkspace" # <-- Put the name of your workspace here.
               XCODE_SCHEME: "TomasQR" # <-- Put the name of your scheme here.
           ios_signing:
-            distribution_type: ad_hoc  # or: ad_hoc | development | enterprise
+            distribution_type: development  # or: ad_hoc | development | enterprise
             bundle_identifier: com.oslo.qrtest
         artifacts:
         - build/ios/ipa/*.ipa
