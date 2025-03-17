@@ -9,6 +9,11 @@ workflows:
           ios_signing:
             distribution_type: app_store  # or: ad_hoc | development | enterprise
             bundle_identifier: com.oslo.qrtest
+        artifacts:
+        - build/ios/ipa/*.ipa
+        - /tmp/xcodebuild_logs/*.log
+        - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+        - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
         publishing:
           app_store_connect:
             # Use referenced App Store Connect API key to authenticate binary upload
