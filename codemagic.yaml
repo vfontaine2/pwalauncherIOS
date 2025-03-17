@@ -18,7 +18,7 @@ workflows:
           script: xcode-project use-profiles
         - name: Build ipa for distribution
           script: | 
-            xcode-project build-ipa \
+            xcode-project build-ipa --no-show-build-settings \
               --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
               --scheme "$XCODE_SCHEME"
         environment:
@@ -44,7 +44,7 @@ workflows:
             # Optional boolean, defaults to false. Whether or not to submit the uploaded
             # build to TestFlight beta review.
             # Note: This action is performed during post-processing.
-            submit_to_testflight: false
+            submit_to_testflight: true
     
             # Optional boolean, defaults to false. Set to true to automatically expire 
             # previous build in review or waiting for review in Testflight before
