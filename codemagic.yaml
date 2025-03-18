@@ -8,7 +8,7 @@ workflows:
         scripts:
         - name: Set Info.plist values
           script: | 
-             PLIST=$CM_BUILD_DIR/$XCODE_SCHEME/Info.plist
+             PLIST=$CM_BUILD_DIR/TomasQR/Info.plist
              PLIST_BUDDY=/usr/libexec/PlistBuddy
              $PLIST_BUDDY $PLIST
         - name: Install CocoaPods dependencies
