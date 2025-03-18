@@ -2,7 +2,7 @@ workflows:
     sample-workflow:
         name: TomQRIos
         integrations:
-          app_store_connect: "appleid admin"
+          app_store_connect: "Codemagic"
         max_build_duration: 120
         instance_type: mac_mini_m2
         scripts:
