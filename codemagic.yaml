@@ -15,7 +15,7 @@ workflows:
           script: | 
              pod install
         - name: Set up provisioning profiles settings on Xcode project
-          script: xcode-project use-profiles --export-options-plist=$HOME/export_options.plist
+          script: xcode-project use-profiles --export-options-plist=$CM_BUILD_DIR/export.plist
         - name: Increment build number
           script: | 
               #!/bin/sh
